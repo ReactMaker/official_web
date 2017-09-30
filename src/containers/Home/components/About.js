@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './About.less';
 
 export default class About extends Component {
+  static propTypes = {
+    match: PropTypes.object,
+  }
+
   render() {
+    const { params: { type } } = this.props.match;
+
     return (
       <div id="aboutPage">
-        <div className="bigPage">About1
+        <div>
+          {type}
         </div>
-        <div className="bigPage"> About2</div>
-        <div className="bigPage">About-0000</div>
       </div>
     );
   }

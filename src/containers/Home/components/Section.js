@@ -23,7 +23,7 @@ export default class Section extends Component {
           //     />
           // )
         }
-        <Link to="/about">Show about</Link>
+        <Link to={`/about/${id}`}>Show {id}</Link>
       </div>
     );
   }

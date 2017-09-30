@@ -39,7 +39,7 @@ export default class Home extends Component {
         </div>
         <AnimatedRoute
           className="aboutRouter"
-          path="/about"
+          path="/about/:type"
           component={About}
           atEnter={{ offset: 100 }}
           atLeave={{ offset: 100 }}
