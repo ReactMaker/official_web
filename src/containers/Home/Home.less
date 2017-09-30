@@ -21,4 +21,25 @@
   #js30day{
     background-color: #018bb2;
   }
+
+  .goHome {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    background: #fff;
+    &.slideIn {
+      opacity: 1;
+    }
+  }
+
+  .aboutRouter {
+    position: fixed;
+    top: 0;
+    left: 60px;
+    width: calc(~"100% - 60px");
+  }
 }
