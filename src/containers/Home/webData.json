@@ -84,49 +84,49 @@
         "name": "高雄前端社群 with ReactMaker#1-教到你嫑嫑的 React 工作坊（上）",
         "description": "ReactMaker的第一場Workshop並且與高雄前端一起合辦，從來，沒有這麼嫑嫑過。高雄今年唯一整整六小時 React.js workshop！教學內容主要以了解基礎的 React 原理開始，再透過各種範例講解，讓你一次打通 React 脈絡！",
         "img": "https://imgur.com/up4Rcaw",
-        "repoUrl": "https://youtu.be/UnJx8shu4Zk"
+        "demoUrl": "https://youtu.be/UnJx8shu4Zk"
       },{
         "key": "ReactMaker#1-1",
         "name": "高雄前端社群 with ReactMaker#1-教到你嫑嫑的 React 工作坊（下）",
         "description": "ReactMaker的第一場Workshop並且與高雄前端一起合辦，從來，沒有這麼嫑嫑過。高雄今年唯一整整六小時 React.js workshop！教學內容主要以了解基礎的 React 原理開始，再透過各種範例講解，讓你一次打通 React 脈絡！",
         "img": "https://imgur.com/up4Rcaw",
-        "repoUrl": "https://youtu.be/qXczgeD8YFc"
+        "demoUrl": "https://youtu.be/qXczgeD8YFc"
       },{
         "key": "ReactMaker#2",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#2 Live",
+        "name": "ReactMaker#2 Live",
         "description": "『直播預告』8/24　19:30 React-Pokemon，在上次的活動後很多大大都有建議希望我們可以開直播🤔，所以這次我們就決定來開一個輕鬆好玩沒有壓力又可以聊聊天的直播😎，我們的這個直播叫做 React | 聊聊 | 踹套件😍！歡迎有興趣的大大們一起來聊聊天踹套件這次的直播是要玩一個找神奇寶貝的套件呦～～",
         "img": "https://imgur.com/ILhkNXR",
-        "repoUrl": "https://youtu.be/2at9LfkBUqk"
+        "demoUrl": "https://youtu.be/2at9LfkBUqk"
       },{
         "key": "ReactMaker#3",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#3 Live",
+        "name": "ReactMaker#3 Live",
         "description": "『直播預告』8/31 19:30 react-lorem-component，這次我們 React | 聊聊 | 踹套件 要來玩的套件是廢文產生器📝📝📝，對於前端工程師在設計畫面時可以把一些廢文放進去預覽版面很方便的喔😏！一起來產生廢文吧！！",
         "img": "https://imgur.com/XnuvDLa",
-        "repoUrl": "https://youtu.be/T0Em0AUns9w"
+        "demoUrl": "https://youtu.be/T0Em0AUns9w"
       },{
         "key": "ReactMaker#4",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#4 Live",
+        "name": "ReactMaker#4 Live",
         "description": "『直播預告』9/07 19:30 QRCode-React-Component，這次的 React | 聊聊 | 踹套件 要玩的套件是，利用React產生出QRCode🔏🔏🔏，一起來用試試看用React產生出自己的QRCode吧😁",
         "img": "https://imgur.com/uGavOvs",
-        "repoUrl": "https://youtu.be/kS9PjfnC-5g"
+        "demoUrl": "https://youtu.be/kS9PjfnC-5g"
       },{
         "key": "ReactMaker#5",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#5 Live",
+        "name": " ReactMaker#5 Live",
         "description": "『直播預告』9/14 19:30 Timeago-React-Component，這次的 React | 聊聊 | 踹套件 要玩的套件是，利用React產生出簡單的顯示時間套件🕑🕑🕑，一起來用來玩套件聊聊天吧❤️，希望直這次的FB直播不要在壞掉了😭",
         "img": "https://imgur.com/h9NSgWo",
-        "repoUrl": "https://youtu.be/e-FH8L1e67M"
+        "demoUrl": "https://youtu.be/e-FH8L1e67M"
       },{
         "key": "ReactMaker#6",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#Official_web_week01(Live#6)",
+        "name": "Official web week01(Live#6)",
         "description": "『Official_web』9/21 19:30，進度：基礎架構建置、頁面Component、JSON設定檔",
         "img": "https://imgur.com/AcgLLoR",
-        "repoUrl": "https://youtu.be/fEiidoMLArs"
+        "demoUrl": "https://youtu.be/fEiidoMLArs"
       },{
         "key": "ReactMaker#7",
-        "name": "React | 聊聊 | 踹套件 ReactMaker#Official_web_week02(Live#7)",
+        "name": "Official web week02(Live#7)",
         "description": "",
         "img": "https://imgur.com/7sqJaBM",
-        "repoUrl": "https://youtu.be/mRHmUciDk_4"
+        "demoUrl": "https://youtu.be/mRHmUciDk_4"
       }
     ]
   },{
@@ -212,7 +212,7 @@
         "repoUrl": "https://github.com/ReactMaker/react_challenge_html5_canvas"
       },{
         "key": "react_challenge_speech_synthesis",
-        "name": "Speech_synthesis",
+        "name": "Speech synthesis",
         "description": "使用SpeechSynthesisUtterance讓瀏覽器說話。",
         "img": "https://imgur.com/PYBB7qo",
         "demoUrl": "https://reactmaker.github.io/react_challenge_speech_synthesis/",
@@ -226,21 +226,21 @@
         "repoUrl": "https://github.com/ReactMaker/react_challenge_sorting_price"
       },{
         "key": "react_challenge_slide_in_on_scroll",
-        "name": "ｓlide_in_on_scroll",
+        "name": "ｓlide in on scroll",
         "description": "滾動到定點的時候會產生動畫的範例",
         "img": "https://i.imgur.com/sYSKHJ4.gif",
         "demoUrl": "https://reactmaker.github.io/react_challenge_slide_in_on_scroll/",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_slide_in_on_scroll"
       },{
         "key": "react_challenge_localstorage_and_event_delegation",
-        "name": "ｌocalstorage_and_event_delegation",
+        "name": "localstorage and event delegation",
         "description": "使用localstorage存取React State",
         "img": "https://i.imgur.com/iOczxB3.gif",
         "demoUrl": "https://reactmaker.github.io/react_challenge_localstorage_and_event_delegation/",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_localstorage_and_event_delegation"
       },{
         "key": "react_challenge_follow_along_links",
-        "name": "Follow_along_links",
+        "name": "Follow along links",
         "description": "使用localstorage存取React State",
         "img": "https://i.imgur.com/I5yEdCk.gif",
         "demoUrl": "https://reactmaker.github.io/react_challenge_follow_along_links/",

@@ -27,19 +27,25 @@ export default class Card extends Component {
       <div className="card">
         <div className="bgimg" style={bgStyle} />
         <div className="buttons">
-          <a title="Demo" href={demoUrl} rel="noopener noreferrer" target="_blank">
-            <div className="circle demo">
-              <FontAwesome name="laptop" />
-            </div>
-          </a>
-          <a title="Github" href={repoUrl} rel="noopener noreferrer" target="_blank">
-            <div className="circle repo">
-              <FontAwesome name="github-alt" />
-            </div>
-          </a>
+          {
+            demoUrl &&
+            <a title="Demo" href={demoUrl} rel="noopener noreferrer" target="_blank">
+              <div className="circle demo">
+                <FontAwesome name="laptop" />
+              </div>
+            </a>
+          }
+          {
+            repoUrl &&
+            <a title="Github" href={repoUrl} rel="noopener noreferrer" target="_blank">
+              <div className="circle repo">
+                <FontAwesome name="github-alt" />
+              </div>
+            </a>
+          }
         </div>
         <div className="cardInfo">
-          <div className="title">{name}</div>
+          <div className="title" title={name}>{name}</div>
           <div className="des">{description}</div>
         </div>
       </div>

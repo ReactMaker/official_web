@@ -21,4 +21,27 @@
   #js30day{
     background-color: #018bb2;
   }
+
+  .goHome {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 60px;
+    height: 100vh;
+    background: yellow;
+    // display: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    &.slideIn {
+      // display: block;
+      opacity: 1;
+    }
+  }
+
+  .animateRoute {
+    position: fixed;
+    top: 0px;
+    left: 60px;
+    width: calc(~"100% - 60px");
+  }
 }
