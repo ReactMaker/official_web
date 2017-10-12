@@ -1,3 +1,5 @@
+@import '../../theme/variables.less';
+
 #pageHome{
   .section{
     height: 100vh;
@@ -22,9 +24,28 @@
     background-color: #018bb2;
   }
 
-  .goHome {
+  .menu {
     position: fixed;
     top: 0px;
+    left: 0px;
+    width: 100%;
+    height: @menu_height;
+    background: pink;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    &.slideIn {
+      // display: block;
+      opacity: 1;
+    }
+
+    .link {
+      margin-right: 10px;
+    }
+  }
+
+  .goHome {
+    position: fixed;
+    top: @menu_height;
     left: 0px;
     width: 60px;
     height: 100vh;
@@ -40,7 +61,7 @@
 
   .animateRoute {
     position: fixed;
-    top: 0px;
+    top: @menu_height;
     left: 60px;
     width: calc(~"100% - 60px");
   }

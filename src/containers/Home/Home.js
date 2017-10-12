@@ -16,12 +16,14 @@ export default class Home extends Component {
     match: PropTypes.object,
   }
 
-  goDetail = () => {
-    this.props.history.push('/detail');
+  goDetail = (type) => {
+    this.props.history.push(`/detail/${type}`);
   }
 
   render() {
     const { isExact } = this.props.match;
+
+    document.getElementsByTagName('html')[0].style.overflow = isExact ? 'auto' : 'hidden';
 
     return (
       <div id="pageHome">
@@ -37,12 +39,19 @@ export default class Home extends Component {
             />
           )
         }
+        <div className={`menu ${!isExact && 'slideIn'}`}>
+          {
+            webJson.map(sectionData => (
+              <Link className="link" to={`/detail/${sectionData.key}`}>{sectionData.title}</Link>
+            ))
+          }
+        </div>
         <div className={`goHome ${!isExact && 'slideIn'}`}>
           <Link to="/">{'<-'}</Link>
         </div>
         <AnimatedRoute
           className="animateRoute"
-          path="/detail"
+          path="/detail/:type"
           component={DetailPage}
           atEnter={{ offset: 100 }}
           atLeave={{ offset: 100 }}

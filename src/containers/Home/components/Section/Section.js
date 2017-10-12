@@ -30,7 +30,7 @@ export default class Section extends Component {
             )
           }
         </div>
-        <button className="more" onClick={goDetail}>More</button>
+        <button className="more" onClick={() => goDetail(id)}>More</button>
       </div>
     );
   }

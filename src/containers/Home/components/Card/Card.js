@@ -46,7 +46,7 @@ export default class Card extends Component {
         </div>
         <div className="cardInfo">
           <div className="title" title={name}>{name}</div>
-          <div className="des">{description}</div>
+          <div className="des" title={description}>{description}</div>
         </div>
       </div>
     );
