@@ -1,0 +1,26 @@
+[
+  {
+    "name": "HYMAN",
+    "title": "RD.",
+    "photo": "https://reactmaker.github.io/Member_introduction/assets/b341f152f473921b457d41d4ae579559.jpg",
+    "Expertise": "React, Cordova, nodejs",
+    "Introduction": "前端工程師，喜歡研究新的技術，也喜歡用程式玩出更多有趣的UI跟效果，想要帶領更多的人進入ReactJS的世界，最近在研究Mobx.js！",
+    "github": "https://github.com/chnbohwr"
+  },
+  {
+    "name": "ANDY",
+    "title": "RD.",
+    "photo": "https://reactmaker.github.io/Member_introduction/assets/5aa454b1e7ea07040749ee472e1bdc43.jpg",
+    "Expertise": "JavaScript, React, NodeJS",
+    "Introduction": "一頭栽進前端世界的小小工程師，喜歡玩各種前端新鮮事物。 目前專注於ReactJS，使用過Flux、Redux、Mobx等單向資料流進行專案開發。",
+    "github": "https://github.com/bbandydd"
+  },
+  {
+    "name": "GIANT",
+    "title": "PM.",
+    "photo": "https://reactmaker.github.io/Member_introduction/assets/53ac682608514b50ddaeab8ed99cae5f.jpg",
+    "Expertise": "",
+    "Introduction": "在團隊中擔任聯絡窗口，目前是高應大碩生，由於對前端開發有興趣，因此就跟大大們一起組成讀書會，專注於學習ReactJs。",
+    "github": "https://github.com/TKDchampion"
+  }
+]
