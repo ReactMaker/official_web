@@ -20,7 +20,7 @@ export default class DetailPage extends Component {
         <div className="detailContainer">
           {
             matchObject &&
-            matchObject.dataList.map(
+            matchObject.dataList.reverse().map(
               data =>
                 <Card
                   {...data}
