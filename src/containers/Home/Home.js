@@ -33,6 +33,7 @@ export default class Home extends Component {
             <Section
               key={sectionData.key}
               title={sectionData.title}
+              desc={sectionData.desc}
               dataList={sectionData.dataList.slice(-4).reverse()}
               id={sectionData.key}
               goDetail={this.goDetail}

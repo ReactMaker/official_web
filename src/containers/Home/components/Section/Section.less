@@ -5,23 +5,37 @@
 }
 
 .section {
-  h2 {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-
   .flex_box();
   position: relative;
+  min-height: 100vh;
+  .sectionTitle{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    .titleText{
+      h2{
+        color: #555;
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+      p{
+        width: 280px;
+        color: #777;
+        margin-bottom: 20px;
+      }
+    }
+  }
 
   .content {
     .flex_box();
+    flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
+    min-height: 100vh;
+    background: #ccc;
   }
 
   .more {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    color: #777;
   }
 }

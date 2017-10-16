@@ -10,16 +10,23 @@ export default class Section extends Component {
     id: PropTypes.string,
     dataList: PropTypes.array,
     goDetail: PropTypes.func,
+    desc: PropTypes.string,
   }
 
   render() {
     const {
-      title, id, dataList, goDetail,
+      title, id, dataList, goDetail, desc
     } = this.props;
 
     return (
       <div className="section" id={id}>
-        <h2>{title}</h2>
+        <div className="sectionTitle">
+          <div className="titleText">
+            <h2>{title}</h2>
+            <p>{desc}</p>
+            <button className="more" onClick={() => goDetail(id)}>more...</button>
+          </div>
+        </div>
         <div className="content">
           {
             dataList.map(
@@ -30,7 +37,6 @@ export default class Section extends Component {
             )
           }
         </div>
-        <button className="more" onClick={() => goDetail(id)}>More</button>
       </div>
     );
   }
