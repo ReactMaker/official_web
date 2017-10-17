@@ -29,12 +29,13 @@ export default class Home extends Component {
       <div id="pageHome">
         <HomeTitle />
         {
-          webJson.map(sectionData =>
+          webJson.map((sectionData, index) =>
             <Section
+              reverse={index % 2 === 0}
               key={sectionData.key}
               title={sectionData.title}
               desc={sectionData.desc}
-              dataList={sectionData.dataList.slice(-4).reverse()}
+              dataList={sectionData.dataList.slice(-3).reverse()}
               id={sectionData.key}
               goDetail={this.goDetail}
             />

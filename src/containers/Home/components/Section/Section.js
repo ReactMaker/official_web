@@ -11,16 +11,18 @@ export default class Section extends Component {
     dataList: PropTypes.array,
     goDetail: PropTypes.func,
     desc: PropTypes.string,
+    reverse: PropTypes.bool
   }
 
   render() {
     const {
-      title, id, dataList, goDetail, desc
+      title, id, dataList, goDetail, desc, reverse
     } = this.props;
 
     return (
-      <div className="section" id={id}>
+      <div className={`section ${reverse && 'reverse'}`} id={id}>
         <div className="sectionTitle">
+          <div className="shadow">{title}</div>
           <div className="titleText">
             <h2>{title}</h2>
             <p>{desc}</p>

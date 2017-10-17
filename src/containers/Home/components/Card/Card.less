@@ -9,6 +9,7 @@
   flex-direction: row;
   margin-bottom: 20px;
   background: rgba(255, 255, 255, .3);
+  box-shadow: 10px 10px 14px #ccc;
   .bgimg{
     width: @cardHeight;
     height: @cardHeight;
@@ -22,15 +23,16 @@
     flex-direction: column;
     min-width: 0;
     .title{
-      color: #555;
+      color: #777;
       font-size: 24px;
       overflow:hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      margin-bottom: 10px;
     }
     .des{
-      font-size: 12px;
-      color: #777;
+      font-size: 14px;
+      color: #999;
     }
 
     .buttons{
@@ -40,25 +42,24 @@
       flex-grow: 1;
       align-items: flex-end;
       .circle{
-        width: 40px;
-        height: 40px;
-        border-radius: 40px;
-        background-color: #bbb;
-        margin: 0 5px;
+        // width: 40px;
+        // height: 40px;
+        // border-radius: 40px;
+        // background-color: #bbb;
+        margin: 0 10px;
         text-align: center;
         line-height: 40px;
-        color: white;
+        // color: white;
         font-size: 25px;
         transition: .25s all;
         &:hover{
           transform: scale(1.5) rotate(370deg);
         }
         &.demo{
-          background-color: rgb(255, 101, 116);
+          color: rgb(255, 101, 116);
         }
         &.repo{
-          background-color: #222;
-          color: white;
+          color: #555;
         }
       }
     }

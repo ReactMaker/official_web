@@ -30,7 +30,8 @@
   },
   {
     "key": "game",
-    "title": "小遊戲",
+    "title": "Games",
+    "desc": "復刻經典的小遊戲，透過 React 讓大家學習怎麼去操作 DOM 並且用 data-driven 的方式來更新畫面，讓所學融會貫通。",
     "dataList": [
       {
         "key": "react_challenge_1to50",
@@ -78,7 +79,8 @@
     ]
   },{
     "key": "live",
-    "title": "直播影片",
+    "title": "Live Videos",
+    "desc": "我們如果有時間就會透過 zoom/FB 為各位做直播分享 React 的相關知識或是實戰，每次結束之後就會錄影放在 Youtube 上面，你可以點選影片來回顧。",
     "dataList": [
       {
         "key": "ReactMaker#1",
@@ -145,6 +147,7 @@
   },{
     "key": "js30day",
     "title": "JS 30 Day",
+    "desc": "JS 30 Day 是 Wes Bos 知名的免費教學，我們挑選出可以被 React 化的一些章節實作，並且放在我們的 Github 上面讓大家可以複製回去動手做做看。",
     "dataList": [
       {
         "key": "tutorial_props",

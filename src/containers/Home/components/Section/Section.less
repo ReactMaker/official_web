@@ -5,37 +5,92 @@
 }
 
 .section {
+  &.reverse {
+    flex-direction: row-reverse;
+    .content {
+      .card:nth-child(1) {
+        transform: translateX(30px);
+      }
+      .card:nth-child(2) {
+        transform: translateX(10px);
+      }
+      .card:nth-child(3) {
+        transform: translateX(-10px);
+      }
+      .card:nth-child(4) {
+        transform: translateX(-30px);
+      }
+    }
+    .sectionTitle {
+      border-left: 1px solid #ccc;
+    }
+  }
   .flex_box();
   position: relative;
   min-height: 100vh;
-  .sectionTitle{
-    width: 30%;
+  .sectionTitle {
+    border-left: none;
+    border-right: 1px solid #ccc;
+    width: 50%;
     display: flex;
     justify-content: center;
-    .titleText{
-      h2{
-        color: #555;
-        font-size: 2rem;
+    position: relative;
+    .shadow {
+      position: absolute;
+      font-size: 5rem;
+      font-family: 'Monoton', cursive;
+      z-index: 1;
+      color: #ccc;
+      top: -50px;
+      opacity: .7;
+    }
+    .box {
+      width: 90%;
+      height: 50vh;
+      position: absolute;
+      background: #aaa;
+      z-index: 0;
+      top: -10vh;
+      left: 10vh;
+    }
+    .titleText {
+      h2 {
+        position: relative;
+        z-index: 2;
+        color: #888;
+        font-size: 3rem;
         margin-bottom: 20px;
       }
-      p{
-        width: 280px;
-        color: #777;
+      p {
+        position: relative;
+        z-index: 2;
+        width: 450px;
+        font-size: 1rem;
         margin-bottom: 20px;
+      }
+      .more,
+      p {
+        color: #aaa;
       }
     }
   }
-
   .content {
     .flex_box();
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
-    min-height: 100vh;
-    background: #ccc;
-  }
-
-  .more {
-    color: #777;
+    min-height: 100vh; // background: #ccc;
+    .card:nth-child(1) {
+      transform: translateX(-30px);
+    }
+    .card:nth-child(2) {
+      transform: translateX(-10px);
+    }
+    .card:nth-child(3) {
+      transform: translateX(10px);
+    }
+    .card:nth-child(4) {
+      transform: translateX(30px);
+    }
   }
 }
