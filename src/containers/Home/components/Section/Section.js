@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Parallax } from 'react-scroll-parallax';
 
 import Card from '../Card';
 import './Section.less';
@@ -22,7 +23,10 @@ export default class Section extends Component {
     return (
       <div className={`section ${reverse && 'reverse'}`} id={id}>
         <div className="sectionTitle">
-          <div className="shadow">{title}</div>
+          <div className="blur"/>
+          <Parallax className="shadow" offsetYMax={50} offsetYMin={-50}>
+            <div>{title}</div>
+          </Parallax>
           <div className="titleText">
             <h2>{title}</h2>
             <p>{desc}</p>
