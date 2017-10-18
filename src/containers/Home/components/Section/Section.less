@@ -7,20 +7,6 @@
 .section {
   &.reverse {
     flex-direction: row-reverse;
-    .content {
-      .card:nth-child(1) {
-        transform: translateX(30px);
-      }
-      .card:nth-child(2) {
-        transform: translateX(10px);
-      }
-      .card:nth-child(3) {
-        transform: translateX(-10px);
-      }
-      .card:nth-child(4) {
-        transform: translateX(-30px);
-      }
-    }
     .sectionTitle {
       .blur {
         display: none;
@@ -80,10 +66,10 @@
         font-size: 1rem;
         margin-bottom: 20px;
       }
-      .more,
-      p {
+      .more,p {
         color: #aaa;
       }
+      .more{ border-radius: 10px; border: 1px solid; padding: 5px; }
     }
   }
   .content {
@@ -92,17 +78,47 @@
     flex-wrap: wrap;
     flex: 1;
     min-height: 100vh; // background: #ccc;
-    .card:nth-child(1) {
-      transform: translateX(-30px);
+  }
+}
+
+.section.section {
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    .content {
+      min-height: 0;
+      justify-content: flex-start;
     }
-    .card:nth-child(2) {
-      transform: translateX(-10px);
+    .sectionTitle{
+      width:80%;
+      padding: 10px;
+      display: block;
+      margin: 40px 0 20px 0;
+      .titleText p{
+        width: 100%;
+      }
     }
-    .card:nth-child(3) {
-      transform: translateX(10px);
+    &.reverse .sectionTitle .blur {
+      display: block;
     }
-    .card:nth-child(4) {
-      transform: translateX(30px);
+  }
+}
+
+.section.section {
+  @media(max-width: 600px) {
+    padding: 10px;
+    overflow-x: hidden;
+    .sectionTitle{
+      width:100%;
+      display: block;
+      .titleText p{
+        width: 100%;
+      }
+    }
+    .content .animated .card, .content .animated, .content{
+      width: 100%;
+    }
+    .card .bgimg{
+      display: none;
     }
   }
 }
