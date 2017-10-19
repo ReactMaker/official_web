@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { AnimatedRoute } from 'react-router-transition';
 import { Link } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import HomeTitle from './components/HomeTitle';
 import Section from './components/Section';
@@ -28,17 +29,21 @@ export default class Home extends Component {
     return (
       <div id="pageHome">
         <HomeTitle />
-        {
-          webJson.map(sectionData =>
-            <Section
-              key={sectionData.key}
-              title={sectionData.title}
-              dataList={sectionData.dataList.slice(-4).reverse()}
-              id={sectionData.key}
-              goDetail={this.goDetail}
-            />
-          )
-        }
+        <ParallaxProvider>
+          {
+            webJson.map((sectionData, index) =>
+              <Section
+                reverse={index % 2 === 0}
+                key={sectionData.key}
+                title={sectionData.title}
+                dataList={sectionData.dataList.slice(-3).reverse()}
+                id={sectionData.key}
+                goDetail={this.goDetail}
+                desc={sectionData.desc}
+              />
+            )
+          }
+        </ParallaxProvider>
         <div className={`menu ${!isExact && 'slideIn'}`}>
           {
             webJson.map(sectionData => (

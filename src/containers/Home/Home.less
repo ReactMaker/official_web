@@ -1,27 +1,33 @@
-@import '../../theme/variables.less';
+@menu_height: 40px;
 
 #pageHome{
-  .section{
-    height: 100vh;
-  }
+  background-image: url('../../static/images/bg2.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   #homeTitle{
-    background-color: #ccc;
+    background-color:#0f1331;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  #game{
-    background-color: #354b5b;
-  }
-
-  #live{
-    background-color: #e4bfab;
-  }
-
-  #js30day{
-    background-color: #018bb2;
+    position: relative;
+    color: #eeeeee;
+    font-family: 'Fascinate Inline', cursive;
+    padding-left: 10px;
+    h1{
+      font-size: 3rem;
+    }
+    .scrollDown{
+      font-size: 40px;
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+    }
   }
 
   .menu {
@@ -53,9 +59,11 @@
     // display: none;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    transform: translateX(-60px);
     &.slideIn {
       // display: block;
       opacity: 1;
+      transform: translateX(0px);
     }
   }
 

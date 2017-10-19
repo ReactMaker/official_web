@@ -1,27 +1,28 @@
 [
   {
     "key": "Util",
-    "title": "小工具",
+    "title": "Tools",
+    "desc": "製作簡單、方便、好用的小工具可以幫助很多剛開始踏入 React 的新手快速的熟悉，像是 StartKit 就是我們想讓大家可以快速上手的所搭件的橋樑",
     "dataList": [
       {
         "key": "react_thumbnail",
         "name": "React Thumbnail",
         "description": "React 使用antd上傳圖片、影片，並取得base64的image呈現縮圖。",
-        "img": "https://i.imgur.com/bXeUGwp.gif",
+        "img": "https://i.imgur.com/6cp9Nl3.png",
         "demoUrl": "https://reactmaker.github.io/react_generator/",
         "repoUrl": "https://github.com/ReactMaker/react_thumbnail"
       },{
         "key": "react_generator",
         "name": "React Generator",
         "description": "使用React+Material UI+Mobx實作React程式碼產生器只要修改左側名稱，右邊會即時顯示React程式碼結構",
-        "img": "https://i.imgur.com/fTMntj4.gif",
+        "img": "https://i.imgur.com/S6pQRWF.png",
         "demoUrl": "https://reactmaker.github.io/react_thumbnail/",
         "repoUrl": "https://github.com/ReactMaker/react_generator"
       },{
         "key": "simple_react_start_kit_2017",
         "name": "Simple React Start Kit 2017",
         "description": "這個環境包可以讓你快速體驗ReactJS開發環境的便利，希望可以讓你用最簡單的環境開始學習React。",
-        "img": "https://i.imgur.com/EoqVm8J.png",
+        "img": "https://i.imgur.com/GyCojI4.png",
         "demoUrl": "",
         "repoUrl": "https://github.com/ReactMaker/simple_react_start_kit_2017"
       }
@@ -29,7 +30,8 @@
   },
   {
     "key": "game",
-    "title": "小遊戲",
+    "title": "Games",
+    "desc": "復刻經典的小遊戲，透過 React 讓大家學習怎麼去操作 DOM 並且用 data-driven 的方式來更新畫面，讓所學融會貫通。",
     "dataList": [
       {
         "key": "react_challenge_1to50",
@@ -77,7 +79,8 @@
     ]
   },{
     "key": "live",
-    "title": "直播影片",
+    "title": "Live Videos",
+    "desc": "我們如果有時間就會透過 zoom/FB 為各位做直播分享 React 的相關知識或是實戰，每次結束之後就會錄影放在 Youtube 上面，你可以點選影片來回顧。",
     "dataList": [
       {
         "key": "ReactMaker#1",
@@ -144,6 +147,7 @@
   },{
     "key": "js30day",
     "title": "JS 30 Day",
+    "desc": "JS 30 Day 是 Wes Bos 知名的免費教學，我們挑選出可以被 React 化的一些章節實作，並且放在我們的 Github 上面讓大家可以複製回去動手做做看。",
     "dataList": [
       {
         "key": "tutorial_props",
@@ -247,7 +251,7 @@
         "key": "react_challenge_localstorage_and_event_delegation",
         "name": "localstorage and event delegation",
         "description": "使用localstorage存取React State。",
-        "img": "https://i.imgur.com/iOczxB3.gif",
+        "img": "https://i.imgur.com/ximJk8c.gif",
         "demoUrl": "https://reactmaker.github.io/react_challenge_localstorage_and_event_delegation/",
         "repoUrl": "https://github.com/ReactMaker/react_challenge_localstorage_and_event_delegation"
       },{
