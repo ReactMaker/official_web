@@ -145,8 +145,8 @@
       }
     ]
   },{
-    "key": "js30day",
-    "title": "JS 30 Day",
+    "key": "js30ay",
+    "title": "JS 100 Day",
     "desc": "JS 30 Day 是 Wes Bos 知名的免費教學，我們挑選出可以被 React 化的一些章節實作，並且放在我們的 Github 上面讓大家可以複製回去動手做做看。",
     "dataList": [
       {
