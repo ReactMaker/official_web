@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import FontAwesome from 'react-fontawesome';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Thumbnail from '../Thumbnail';
 
 import './Card.less';
 
@@ -21,12 +22,10 @@ export default class Card extends Component {
       demoUrl,
       repoUrl,
     } = this.props;
-    const bgStyle = {
-      backgroundImage: `URL("${img}")`
-    };
+
     return (
       <div className="card">
-        <div className="bgimg" style={bgStyle} />
+        <Thumbnail src={img} />
 
         <div className="cardInfo">
           <div className="title" title={name}>{name}</div>
