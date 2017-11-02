@@ -32,13 +32,18 @@
 
   .menu {
     position: fixed;
+    z-index: 10;
     top: 0px;
     left: 0px;
     width: 100%;
     height: @menu_height;
-    background: pink;
+    background-color: white;
+    color: #555;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.slideIn {
       // display: block;
       opacity: 1;
@@ -46,31 +51,53 @@
 
     .link {
       margin-right: 10px;
+      color: inherit;
     }
   }
 
   .goHome {
     position: fixed;
-    top: @menu_height;
+    z-index: 10;
+    top: 0;
+    cursor: pointer;
     left: 0px;
     width: 60px;
     height: 100vh;
-    background: yellow;
+    background-color: white;
+    color: #555;
     // display: none;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transform: translateX(-60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.slideIn {
       // display: block;
       opacity: 1;
       transform: translateX(0px);
     }
+    &:hover{
+      background-color: #555;
+      color: white;
+      .bounce{
+        animation-iteration-count: infinite;
+      }
+    }
   }
 
   .animateRoute {
     position: fixed;
+    z-index: 10;
     top: @menu_height;
     left: 60px;
     width: calc(~"100% - 60px");
+  }
+  .profile {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, .3);
   }
 }
