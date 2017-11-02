@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import FontAwesome from 'react-fontawesome';
 import { AnimatedRoute } from 'react-router-transition';
 import { Link } from 'react-router-dom';
 import { ParallaxProvider } from 'react-scroll-parallax';
@@ -21,6 +22,9 @@ export default class Home extends Component {
     this.props.history.push(`/detail/${type}`);
   }
 
+  goHome = () => {
+    this.props.history.push('/');
+  }
   render() {
     const { isExact } = this.props.match;
 
@@ -51,8 +55,10 @@ export default class Home extends Component {
             ))
           }
         </div>
-        <div className={`goHome ${!isExact && 'slideIn'}`}>
-          <Link to="/">{'<-'}</Link>
+        <div className={`goHome ${!isExact && 'slideIn'}`} onClick={this.goHome}>
+          <div className="animated bounce">
+            <FontAwesome name="chevron-left" />
+          </div>
         </div>
         <AnimatedRoute
           className="animateRoute"
@@ -62,7 +68,7 @@ export default class Home extends Component {
           atLeave={{ offset: 100 }}
           atActive={{ offset: 0 }}
           mapStyles={styles => ({
-            transform: `translateX(${styles.offset}%)`,
+            transform: `translateX(${styles.offset}%)`
           })}
         />
       </div>

@@ -32,43 +32,70 @@
 
   .menu {
     position: fixed;
+    z-index: 10;
     top: 0px;
     left: 0px;
     width: 100%;
     height: @menu_height;
-    background: pink;
+    background: white;
+    color: #777;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &.slideIn {
       // display: block;
       opacity: 1;
     }
-
     .link {
-      margin-right: 10px;
+      color: inherit;
+      margin: 0 10px;
+      transition: all .25s ease-in-out;
+      &:hover{
+        transform: scale(1.5);
+      }
     }
   }
 
   .goHome {
+    cursor: pointer;
     position: fixed;
+    z-index: 10;
     top: @menu_height;
     left: 0px;
     width: 60px;
     height: 100vh;
-    background: yellow;
+    color: #777;
+    background-color: white;
+    border-right: 1px solid #ccc;
     // display: none;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     transform: translateX(-60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background-color: #777;
+      color: white;
+      .bounce{
+        animation-iteration-count: infinite;
+      }
+    }
     &.slideIn {
       // display: block;
       opacity: 1;
       transform: translateX(0px);
     }
+    a{
+      color: inherit;
+    }
   }
 
   .animateRoute {
     position: fixed;
+    z-index: 10;
     top: @menu_height;
     left: 60px;
     width: calc(~"100% - 60px");

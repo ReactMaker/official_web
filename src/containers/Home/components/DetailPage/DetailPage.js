@@ -16,7 +16,7 @@ export default class DetailPage extends Component {
 
     return (
       <div className="detailPage">
-        <p>數量：{matchObject.dataList.length}</p>
+        <p className="count">數量：{matchObject.dataList.length}</p>
         <div className="detailContainer">
           {
             matchObject &&
