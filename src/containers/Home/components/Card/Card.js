@@ -5,6 +5,8 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 import './Card.less';
 
+import logo from '../../../../static/images/logo.png';
+
 export default class Card extends Component {
   static propTypes = {
     name: PropTypes.string,
@@ -13,6 +15,25 @@ export default class Card extends Component {
     demoUrl: PropTypes.string,
     repoUrl: PropTypes.string,
   }
+
+  state = {
+    src: logo,
+  }
+
+  componentDidMount() {
+    this.image.addEventListener('mouseenter', () => {
+      this.setState({
+        src: this.props.img,
+      });
+    });
+
+    this.image.addEventListener('mouseleave', () => {
+      this.setState({
+        src: logo,
+      });
+    });
+  }
+
   render() {
     const {
       name,
@@ -21,12 +42,10 @@ export default class Card extends Component {
       demoUrl,
       repoUrl,
     } = this.props;
-    const bgStyle = {
-      backgroundImage: `URL("${img}")`
-    };
+
     return (
       <div className="card">
-        <div className="bgimg" style={bgStyle} />
+        <img ref={image => (this.image = image)} alt="" className="bgimg" src={this.state.src} />
 
         <div className="cardInfo">
           <div className="title" title={name}>{name}</div>
