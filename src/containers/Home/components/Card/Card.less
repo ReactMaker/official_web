@@ -8,9 +8,10 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 25px;
-  background: rgba(255, 255, 255, 0.897);
-  box-shadow: 10px 10px 50px #ccc;
-  // border-radius: 10px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 10px 10px 100px rgba(0,0,0,.12);
+  border-radius: 6px;
+  font-family: 'Monda', sans-serif;
   .bgimg{
     width: @cardHeight;
     height: @cardHeight;
@@ -24,12 +25,13 @@
     flex-direction: column;
     min-width: 0;
     .title{
-      color: #777;
+      color: #00bcd4;
       font-size: 24px;
-      overflow:hidden;
+      overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
       margin-bottom: 10px;
+      letter-spacing:-2px;
     }
     .des{
       font-size: 14px;
