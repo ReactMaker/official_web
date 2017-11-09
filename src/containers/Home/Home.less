@@ -1,5 +1,9 @@
 @menu_height: 40px;
 
+body {
+  background-color: #0f1331;
+}
+
 #pageHome{
   background-image: url('../../static/images/bg2.jpg');
   background-size: cover;
@@ -7,40 +11,51 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
+  
   #homeTitle{
     background-color:#0f1331;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    color: #eeeeee;
-    font-family: 'Fascinate Inline', cursive;
-    padding-left: 10px;
+    .welcome {
+      margin-top: -10%;
+    }
     h1{
-      font-size: 3rem;
+      font-size: 6rem;
+      text-align: center;
+      font-family: 'Monda', sans-serif;
+      color: #66d9ef;
+      letter-spacing: -5px;
+    }
+    h3 {
+      color: #eee;
+      text-align: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: bold;
+      font-size: 2rem;
     }
     .scrollDown{
-      font-size: 40px;
+      font-size: .5rem;
       position: absolute;
-      left: 30px;
-      bottom: 30px;
+      left: 50%;
+      bottom: 10%;
+      transform: translate(-50%, 0);
       animation-duration: 3s;
       animation-delay: 2s;
       animation-iteration-count: infinite;
+      color: #fff;
+      border:1px solid rgba(102,217,239, .5);
+      padding: 10px 15px;
+      border-radius: 5px;
     }
   }
 
   .menu {
     position: fixed;
-    z-index: 10;
+    z-index: 99;
     top: 0px;
     left: 0px;
     width: 100%;
-    height: @menu_height;
-    background-color: white;
-    color: #555;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all .6s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,6 +67,16 @@
     .link {
       margin-right: 10px;
       color: inherit;
+      text-decoration: none;
+      padding: 2px 6px;
+      transition: all 300ms linear;
+      line-height: @menu_height;
+      color: #555;
+      &:hover {
+        color: #9d68ff;
+        font-size: 1.6rem;
+        line-height: 2rem;
+      }
     }
   }
 
@@ -63,7 +88,7 @@
     left: 0px;
     width: 60px;
     height: 100vh;
-    background-color: white;
+    background-color: #e8e9ea;
     color: #555;
     // display: none;
     opacity: 0;
@@ -89,7 +114,7 @@
   .animateRoute {
     position: fixed;
     z-index: 10;
-    top: @menu_height;
+    top: 0;
     left: 60px;
     width: calc(~"100% - 60px");
   }
