@@ -141,7 +141,25 @@
         "name": "Official web week04(Live 9)",
         "description": "『Official_web』10/12 19:30，進度：多行文字溢出省略、內頁menu切換及內容",
         "img": "https://i.imgur.com/WrVrUo3.jpg",
-        "demoUrl": ""
+        "demoUrl": "https://youtu.be/lNoWgGnqs0U"
+      },{
+        "key": "ReactMaker#10",
+        "name": "Official web week05(Live 10)",
+        "description": "『Official_web』10/19 19:30，進度：react-parallax、react-particles-js、css美化",
+        "img": "https://i.imgur.com/GQGlaZX.jpg",
+        "demoUrl": "https://youtu.be/EqFXULJb4xg"
+      },{
+        "key": "ReactMaker#11",
+        "name": "Official web week06(Live 11)",
+        "description": "『Official_web』11/02 19:30，進度：完成上次的美化效果、完成number頁面",
+        "img": "https://i.imgur.com/CTeFLQs.jpg",
+        "demoUrl": "https://youtu.be/K_jp83VafMc"
+      },{
+        "key": "ReactMaker#12",
+        "name": "Official web week07(Live 12)",
+        "description": "『Official_web』11/09 19:30，進度：終於完成啦～",
+        "img": "https://i.imgur.com/8icRHVx.jpg",
+        "demoUrl": "https://youtu.be/HKq4ax5QDMo"
       }
     ]
   },{
