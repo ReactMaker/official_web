@@ -22,7 +22,7 @@ export default class HomeTitle extends Component {
       <div className="section" id="homeTitle">
         <Particles width="100%" height="100%" style={particleStyle} params={particleSetting} />
         <div className="welcome">
-          <h3>Hello, Wellcome to</h3>
+          <h3>Hello, Welcome to</h3>
           <h1>ReactMaker</h1>
         </div>
         <div onClick={this.handleScrollDown} className="scrollDown bounce">
