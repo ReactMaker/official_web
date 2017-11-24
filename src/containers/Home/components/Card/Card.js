@@ -21,16 +21,22 @@ export default class Card extends Component {
   }
 
   componentDidMount() {
-    this.image.addEventListener('mouseenter', () => {
-      this.setState({
-        src: this.props.img,
+    if (this.props.img.split('.').pop() === 'gif') {
+      this.image.addEventListener('mouseenter', () => {
+        this.setImage(this.props.img);
       });
-    });
 
-    this.image.addEventListener('mouseleave', () => {
-      this.setState({
-        src: logo,
+      this.image.addEventListener('mouseleave', () => {
+        this.setImage(logo);
       });
+    } else {
+      this.setImage(this.props.img);
+    }
+  }
+
+  setImage = (src) => {
+    this.setState({
+      src,
     });
   }
 
