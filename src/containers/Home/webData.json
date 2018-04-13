@@ -9,15 +9,15 @@
         "name": "React Thumbnail",
         "description": "React 使用antd上傳圖片、影片，並取得base64的image呈現縮圖。",
         "img": "https://i.imgur.com/6cp9Nl3.png",
-        "demoUrl": "https://reactmaker.github.io/react_generator/",
-        "repoUrl": "https://github.com/ReactMaker/react_generator"
+        "demoUrl": "https://reactmaker.github.io/react_thumbnail/",
+        "repoUrl": "https://github.com/ReactMaker/react_thumbnail"
       },{
         "key": "react_generator",
         "name": "React Generator",
         "description": "使用React+Material UI+Mobx實作React程式碼產生器只要修改左側名稱，右邊會即時顯示React程式碼結構",
         "img": "https://i.imgur.com/S6pQRWF.png",
-        "demoUrl": "https://reactmaker.github.io/react_thumbnail/",
-        "repoUrl": "https://github.com/ReactMaker/react_thumbnail"
+        "demoUrl": "https://reactmaker.github.io/react_generator/",
+        "repoUrl": "https://github.com/ReactMaker/react_generator"
       },{
         "key": "simple_react_start_kit_2017",
         "name": "Simple React Start Kit 2017",
